@@ -1,0 +1,40 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Servicio
+meta:
+  id: wrk_e45d13e445ef497e95c70d6354f76d3f
+  created: 1793137981517
+  modified: 1793137981517
+  description: ""
+collection:
+  - url: http://localhost:8080/api/servicios
+    name: New Request
+    meta:
+      id: req_a7a434d1cc4649739727630e667e6c8a
+      created: 1793137996990
+      modified: 1793155541746
+      isPrivate: false
+      description: ""
+      sortKey: -1793137996990
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_36f65ea5b65e6740de19026996eccebc79749642
+    created: 1793137981521
+    modified: 1793137981521
+environments:
+  name: Base Environment
+  meta:
+    id: env_36f65ea5b65e6740de19026996eccebc79749642
+    created: 1793137981519
+    modified: 1793137981519
+    isPrivate: false
