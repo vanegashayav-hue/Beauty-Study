@@ -1,0 +1,181 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Servicio
+meta:
+  id: wrk_e45d13e445ef497e95c70d6354f76d3f
+  created: 1793137981517
+  modified: 1793137981517
+  description: ""
+collection:
+  - url: http://localhost:8080/api/servicios
+    name: 01 - Listar Servicios
+    meta:
+      id: req_a7a434d1cc4649739727630e667e6c8a
+      created: 1793137996990
+      modified: 1793157218032
+      isPrivate: false
+      description: ""
+      sortKey: -1793137996990
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/servicios/1
+    name: 02 - Buscar Servicio por ID
+    meta:
+      id: req_6d4cfec80d9143b9ba2361e17cd434b5
+      created: 1793157360039
+      modified: 1793157421149
+      isPrivate: false
+      description: ""
+      sortKey: -1793157360039
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/servicios/buscar?nombre=U%C3%B1as
+    name: 03 - Buscar Servicio por nombre
+    meta:
+      id: req_80de360128494bf79c6a7d24985d4cfc
+      created: 1793157436531
+      modified: 1793157495187
+      isPrivate: false
+      description: ""
+      sortKey: -1793157436531
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/servicios
+    name: 04 - Crear Servicio
+    meta:
+      id: req_5a74a49bfb2949118fe1f7acf7b9b77f
+      created: 1793157519504
+      modified: 1793157784333
+      isPrivate: false
+      description: ""
+      sortKey: -1793157519504
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "id": 7,
+          "nombre": "Manicure",
+          "precio": 35000,
+          "descripcion": "Cuidado de uñas"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/servicios/1
+    name: 05 - Actualizar Servicio completo
+    meta:
+      id: req_c6df6788d7544e7bb67f0cfabbfa6ce7
+      created: 1793157851460
+      modified: 1793158022461
+      isPrivate: false
+      description: ""
+      sortKey: -1793157851460
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "id": 1,
+          "nombre": "Pestañas premium",
+          "precio": 55000,
+          "descripcion": "Servicio profesional de pestañas"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/servicios/3
+    name: 06 - Actualizar parcialmente PATCH
+    meta:
+      id: req_a188b31169ae491db5655c0fbb4eeaee
+      created: 1793158066221
+      modified: 1793158248213
+      isPrivate: false
+      description: ""
+      sortKey: -1793158066221
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: |-
+        {
+          "precio": 38000
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/servicios/7
+    name: 07 - Eliminar Servicio
+    meta:
+      id: req_9367e715bddb43bd8e52a9475daf3557
+      created: 1793158265265
+      modified: 1793158348969
+      isPrivate: false
+      description: ""
+      sortKey: -1793158265265
+    method: DELETE
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_36f65ea5b65e6740de19026996eccebc79749642
+    created: 1793137981521
+    modified: 1793137981521
+environments:
+  name: Base Environment
+  meta:
+    id: env_36f65ea5b65e6740de19026996eccebc79749642
+    created: 1793137981519
+    modified: 1793137981519
+    isPrivate: false
